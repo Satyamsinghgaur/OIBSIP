@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="dashboard.css" />
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <h2>Dashboard</h2>
+      <ul>
+        <li><a href="#">Overview</a></li>
+        <li><a href="#">My Profile</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Support</a></li>
+        <li><a href="#" onclick="logout()">Logout</a></li>
+      </ul>
+    </aside>
+
+    <main class="main-content">
+      <header class="navbar">
+        <span id="greeting"></span>
+      </header>
+
+      <section class="dashboard-content">
+        <h2>Welcome to Your Dashboard</h2>
+        <p>This is a secure area. Use the sidebar to navigate.</p>
+        <div class="cards">
+          <div class="card">Total Tasks: 12</div>
+          <div class="card">Pending: 5</div>
+          <div class="card">Completed: 7</div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="dashboard.js"></script>
+</body>
+</html>
